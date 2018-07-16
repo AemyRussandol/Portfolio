@@ -97,43 +97,151 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+@media (min-width: 576px) { 
+
+    h1.card-title {
+        font-size: 20px;
+    }
+    p.card-text{
+        font-size: 12px;
+    }
+ }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+/* Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) { 
+    h1.card-title {
+        font-size: 2vw;
+    }
+    p.card-text{
+        font-family: 'Quicksand', sans-serif;
+        font-size: 1.5vw;
+    }
+ }
+
+/* Extra large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) { 
+
+    h1.card-title {
+        font-size: 2vw;
+    }
+    p.card-text{
+        font-family: 'Quicksand', sans-serif;
+        font-size: 1.5vw;
+    }
+ }
+
+
 body {
     margin: 0;
     padding: 0;
+    background-image: url(../img/Artboard\ 1.png);
+    background-size: cover;
 }
 
 nav {
     height: 46px;
+    background-color: transparent;
 }
+
+img.socialmedia {
+   max-width: 35px;
+}
+
+img.socialmediagithub {
+    max-width: 45px;
+ }
+ 
+
+ul.socialMedia {
+    display: inline;
+    list-style: none;
+}
+
 
 /* Fonts */
 .aboutName, a.navbar-brand {
     font-family: 'Pacifico', cursive;
 }
 
-.aboutTitle, .aboutWork, a.nav-link {
+.aboutTitle, .aboutWork, a.nav-link, .aboutMe a {
     font-family: 'Poiret One', cursive;
-
 }
 
 a.nav-link {
     font-weight : bold;
 }
 
-.row.landing {
+img.hobbies {
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+/* Home */
+
+.row.landing, .row.about {
     min-height: calc(100vh - 46px);
-    text-align: center;color: white;
-    background-image: url(../img/code-1839406_1920.jpg);
+    text-align: center;
+    color: black;
     align-content: center;
 }
 
-.aboutTitle {
-    margin-top: 15%;
+.col-12.col-md-12 {
+    color: #000;
 }
 
+.aboutTitle, .row.about {
+    margin-top: 10%;
+}
+
+.aboutMe a {
+    color: black;
+    font-weight: bolder;
+}
+
+/* Realisations */
+
 .row.work {
+    align-content: center;
     text-align: center;
     color: black;
+    padding-top: 5%;
+}
+
+/* Contact */
+
+h1.contact {
+    margin-top: 5%;
+    font-family: 'Inconsolata', monospace;
+    font-size: 25px;
+}
+
+.row.contact {
+    align-content: center;
+    text-align: center;
+}
+
+ul.socialMedia a {
+    color: black;
+}
+
+
+.form-row{
+    justify-content:center;
+}
+
+
+h1.card-title,  a.card-link  {
+    font-family: 'Inconsolata', monospace;
+    font-weight: bold;
+}
+
+
+a.card-link {
+    color: #000;
+    text-decoration: none;
 }
 
 /* ==========================================================================
