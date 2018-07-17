@@ -3,12 +3,11 @@
 
 # TEAM
 
-    <name> -- <role> -- <twitter>
+    Amélie Grandin
 
 # THANKS
 
-    <name>
-
+   
 # TECHNOLOGY COLOPHON
 
     CSS3, HTML5
